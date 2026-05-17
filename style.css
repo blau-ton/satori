@@ -1,0 +1,194 @@
+/* Satori · minimal calm style — Cream/Ink/Gold matching the iOS app. */
+
+:root {
+  --bg: #F6F2EB;
+  --card: #FFFFFF;
+  --ink: #1F1A14;
+  --ink-2: #5C5044;
+  --ink-3: #8C7B6B;
+  --gold: #B89968;
+  --divider: rgba(31, 26, 20, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #11162A;
+    --card: #1A2038;
+    --ink: #E8E2D5;
+    --ink-2: #B8B0A0;
+    --ink-3: #80776B;
+    --divider: rgba(232, 226, 213, 0.14);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 28px 96px;
+}
+
+header {
+  margin-bottom: 56px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 48px 0 12px;
+  color: var(--ink);
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: var(--ink-2);
+  margin: 24px 0 8px;
+  text-transform: uppercase;
+}
+
+p, ul, ol {
+  color: var(--ink-2);
+  margin: 0 0 16px;
+}
+
+ul, ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 153, 104, 0.35);
+}
+
+a:hover {
+  border-bottom-color: var(--gold);
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--ink-3);
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--divider);
+  margin: 48px 0;
+}
+
+footer {
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid var(--divider);
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+footer nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+footer nav a {
+  color: var(--ink-2);
+  border-bottom: none;
+}
+
+footer nav a:hover {
+  color: var(--gold);
+}
+
+.divider-circle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 32px auto;
+  max-width: 160px;
+}
+
+.divider-circle::before,
+.divider-circle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(184, 153, 104, 0.45);
+}
+
+.divider-circle .ring {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(184, 153, 104, 0.7);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* small-screen tighter */
+@media (max-width: 480px) {
+  .page { padding: 40px 22px 64px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 20px; margin-top: 36px; }
+}
