@@ -210,28 +210,31 @@ footer nav a:hover {
   color: var(--gold);
 }
 
-.divider-circle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 32px auto;
-  max-width: 160px;
+/* Trennlinie mit tibetischem Endlosknoten (Shrivatsa) in der Mitte —
+   eines der acht buddhistischen Glückssymbole, hier als Hairline-
+   Geflecht. Aus dem Satori-Graphics-Deck portiert.
+   currentColor + opacity übers .divider-knot-Element steuerbar. */
+.divider-knot {
+  display: block;
+  margin: 36px auto;
+  width: 200px;
+  height: 20px;
+  color: var(--gold);
+  opacity: 0.7;
 }
 
-.divider-circle::before,
-.divider-circle::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: rgba(184, 153, 104, 0.45);
+.divider-knot path,
+.divider-knot line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.divider-circle .ring {
-  width: 8px;
-  height: 8px;
-  border: 1px solid rgba(184, 153, 104, 0.7);
-  border-radius: 50%;
-  flex-shrink: 0;
+/* Inner-Knoten ist im scale(0.32), darum strokeWidth 3 für ~1 px sichtbar */
+.divider-knot .knot path {
+  stroke-width: 3;
 }
 
 /* small-screen tighter */
