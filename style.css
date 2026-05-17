@@ -41,7 +41,11 @@ html, body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 56px;
+  gap: 16px;
 }
 
 .brand {
@@ -50,6 +54,33 @@ header {
   gap: 8px;
   text-decoration: none;
   color: var(--ink);
+}
+
+.lang-toggle {
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.lang-toggle .active {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.lang-toggle a {
+  color: var(--ink-3);
+  border-bottom: none;
+}
+
+.lang-toggle a:hover {
+  color: var(--gold);
+}
+
+.lang-toggle .sep {
+  margin: 0 6px;
+  color: var(--divider);
 }
 
 .brand-mark {
