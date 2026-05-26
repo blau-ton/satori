@@ -1,4 +1,4 @@
-/* Satori · minimal calm style — Cream/Ink/Gold matching the iOS app. */
+/* Anavara · minimal calm style — Cream/Ink/Gold matching the iOS app. */
 
 :root {
   --bg: #F6F2EB;
@@ -100,11 +100,14 @@ header {
   color: var(--gold);
 }
 
+/* Anavara-Lotus — 16 äußere Petals gold + 16 innere Petals dunkel,
+   exakte Brand-SVG (assets/branding/Lotus.svg im iOS-Repo). */
 .brand-mark {
-  width: 22px;
-  height: 22px;
-  border: 1.5px solid var(--gold);
-  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background: url(lotus.svg) no-repeat center / contain;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .brand-name {
@@ -212,7 +215,7 @@ footer nav a:hover {
 
 /* Trennlinie mit tibetischem Endlosknoten (Shrivatsa) in der Mitte —
    eines der acht buddhistischen Glückssymbole, hier als Hairline-
-   Geflecht. Aus dem Satori-Graphics-Deck portiert.
+   Geflecht. Aus dem Anavara-Graphics-Deck portiert.
    currentColor + opacity übers .divider-knot-Element steuerbar. */
 .divider-knot {
   display: block;

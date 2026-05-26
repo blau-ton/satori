@@ -1,6 +1,6 @@
-# satori-web
+# anavara
 
-Statische Mini-Site für die satori-App. Enthält:
+Statische Mini-Site für die anavara-App. Enthält:
 
 * `index.html` — schlichte Landing-Page
 * `privacy.html` — DSGVO-Datenschutzerklärung
@@ -25,7 +25,7 @@ Platzhalter, die mit echten Daten ersetzt werden müssen. Such+ersetz
 | `[PLZ ORT]` | `70173 Stuttgart` |
 | `[LAND, z. B. Deutschland]` | `Deutschland` |
 | `[LAND]` | `Deutschland` |
-| `[EMAIL-PLATZHALTER]` | `hallo@satori-app.de` (oder deine echte) |
+| `[EMAIL-PLATZHALTER]` | `hallo@anavara-app.de` (oder deine echte) |
 | `[DATUM-PLATZHALTER, z. B. 17. Mai 2026]` | `17. Mai 2026` |
 | `[BUNDESLAND-PLATZHALTER]` | `Baden-Württemberg` |
 | `[AUFSICHTSBEHÖRDE-PLATZHALTER]` | siehe unten |
@@ -53,12 +53,12 @@ Name nochmal — bitte gleich mitanpassen.
 
 ## GitHub Pages aktivieren (einmalig)
 
-1. Repository erstellen, z. B. `satori-web` unter deinem GitHub-Account
+1. Repository erstellen, z. B. `anavara` unter deinem GitHub-Account
 2. Diese Dateien committen + pushen
 3. Repository-Settings → **Pages** → Source: `Deploy from a branch`
    → Branch: `main`, Folder: `/ (root)` → Save
 4. Nach 1–2 Minuten ist die Seite live unter:
-   `https://<dein-username>.github.io/satori-web/`
+   `https://<dein-username>.github.io/anavara/`
 5. Optional: in den Pages-Settings „Enforce HTTPS" aktivieren
    (sollte automatisch an sein)
 
@@ -67,8 +67,8 @@ Name nochmal — bitte gleich mitanpassen.
 Nach Aktivierung kannst du folgende URLs verwenden:
 
 ```
-https://<dein-username>.github.io/satori-web/privacy.html
-https://<dein-username>.github.io/satori-web/impressum.html
+https://<dein-username>.github.io/anavara/privacy.html
+https://<dein-username>.github.io/anavara/impressum.html
 ```
 
 Diese trägst du in:
@@ -84,22 +84,22 @@ Diese trägst du in:
 
 ---
 
-## Später (optional): Custom Domain `satori-app.de`
+## Später (optional): Custom Domain `anavara-app.de`
 
 Wenn du die Domain registriert hast:
 
 1. Domain bei deinem DNS-Provider auf GitHub Pages zeigen lassen:
-   * Apex `satori-app.de` → 4 A-Records auf 185.199.108.153,
+   * Apex `anavara-app.de` → 4 A-Records auf 185.199.108.153,
      185.199.109.153, 185.199.110.153, 185.199.111.153
-   * `www.satori-app.de` → CNAME auf `<dein-username>.github.io`
+   * `www.anavara-app.de` → CNAME auf `<dein-username>.github.io`
 2. Im Repo eine Datei `CNAME` (kein Suffix!) anlegen mit Inhalt:
    ```
-   satori-app.de
+   anavara-app.de
    ```
-3. Repository-Settings → Pages → Custom domain: `satori-app.de` →
+3. Repository-Settings → Pages → Custom domain: `anavara-app.de` →
    Save. Nach DNS-Propagation (kann 1–24h dauern) live.
 4. „Enforce HTTPS" ankreuzen.
-5. Privacy-URL in App Store Connect auf `https://satori-app.de/privacy.html`
+5. Privacy-URL in App Store Connect auf `https://anavara-app.de/privacy.html`
    ändern, bei nächstem App-Update einreichen.
 
 ---
@@ -110,7 +110,7 @@ Diese Privacy-Page ist eine konsumentenfreundlich gerenderte Version
 der zentralen Doku in der iOS-App-Repo:
 
 ```
-/Users/alessandro/Code/satori/concept/datenschutz.md
+/Users/alessandro/Code/anavara/concept/datenschutz.md
 ```
 
 Wenn sich die Datenerhebung der App ändert, dort zuerst pflegen — und
