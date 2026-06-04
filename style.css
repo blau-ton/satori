@@ -83,7 +83,42 @@ header {
   color: var(--divider);
 }
 
-/* Landing-page: nackte Legal-Links statt Marketing */
+/* Landing-Hero — leise statt marketing-laut. Headline ist italic-serif,
+   Subline ruhig, kein CTA-Button (App-Store-Link sitzt im Meta-Block). */
+.hero {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+}
+
+.lede {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 540px;
+  margin-bottom: 0;
+}
+
+/* Drei kurze Meta-Absätze unter dem Knoten — App-Store-Status,
+   Sprachen, Datenschutz-Versprechen. h3 als ruhige Eyebrows,
+   p als Antwort. Bewusst karger als Marketing-Text. */
+.meta-block {
+  margin-top: 8px;
+}
+
+.meta-block h3:first-child {
+  margin-top: 0;
+}
+
+.meta-block p {
+  max-width: 540px;
+}
+
+/* Legacy-Klasse aus der nackten Stub-Variante — bleibt für die
+   Legal-Pages, die auf dieser Klasse referenzieren könnten. */
 .legal-links {
   display: flex;
   gap: 24px;
